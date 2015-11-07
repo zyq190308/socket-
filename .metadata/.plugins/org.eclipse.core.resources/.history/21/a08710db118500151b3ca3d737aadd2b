@@ -1,0 +1,39 @@
+package com.zyq.client;
+
+import java.net.Socket;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        
+    }
+    public void connect(View view){
+    	
+    	new Thread(){
+    		
+    		public void run() {
+    			Socket socket = new Socket(dstAddress, dstPort);
+    			
+    			
+    			
+    		};
+    		
+    		
+    		
+    	}.start();
+    	
+    }
+
+   
+}

@@ -1,0 +1,13 @@
+
+public class Server {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		ServerSocket server = new ServerSocket(12345);
+		
+	}
+
+}
